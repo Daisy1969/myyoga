@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.syncsadhana.extractor</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/michaelharvey/.gemini/antigravity/scratch/syncsadhana/local_extractor/extract_backup.py</string>
+        <string>--project-id</string>
+        <string>yoga-portal</string>
+        <string>--user-id</string>
+        <string>user_gmail_oauth_id_1085</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/michaelharvey/.gemini/antigravity/scratch/syncsadhana/local_extractor/extractor_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/michaelharvey/.gemini/antigravity/scratch/syncsadhana/local_extractor/extractor_stderr.log</string>
+</dict>
+</plist>
