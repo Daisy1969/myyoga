@@ -767,7 +767,7 @@ export default function App() {
 
   return (
     <div>
-      {/* Yoga Veera Portal Header */}
+      {/* Premium Header */}
       <header style={{
         background: "#ffffff",
         borderBottom: "1px solid #eae8e1",
@@ -778,7 +778,7 @@ export default function App() {
       }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           
-          {/* Left: YV Circle Logo & Serif Title */}
+          {/* Left: SS Circle Logo & Serif Title */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <div style={{
               background: "var(--accent-primary)",
@@ -794,41 +794,26 @@ export default function App() {
               fontFamily: "var(--font-sans)",
               letterSpacing: "0.5px"
             }}>
-              YV
+              SS
             </div>
             <div>
               <h1 style={{ fontSize: "20px", fontWeight: "500", fontFamily: "var(--font-display)", color: "var(--text-primary)", margin: 0, lineHeight: 1.2 }}>
-                Yoga Veera Portal
+                SyncSadhana
               </h1>
+              <span style={{ 
+                fontSize: "10px", 
+                color: "var(--text-muted)", 
+                display: "flex", 
+                alignItems: "center", 
+                gap: "4.5px", 
+                marginTop: "2px", 
+                fontWeight: "500", 
+                fontFamily: "var(--font-sans)" 
+              }}>
+                {isDemoMode ? <Sliders size={10} color="orange" /> : <Database size={10} color="var(--accent-success)" />} 
+                {isDemoMode ? "Sandbox Demo Mode" : "Firebase Cloud Engine Connected"}
+              </span>
             </div>
-          </div>
-
-          {/* Center: Navigation Links */}
-          <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
-            <span style={{ 
-              display: "flex", 
-              alignItems: "center", 
-              gap: "6px", 
-              fontSize: "14px", 
-              fontWeight: "500", 
-              color: "var(--text-secondary)",
-              cursor: "pointer"
-            }}>
-              <Calendar size={15} /> Sessions
-            </span>
-            <span style={{ 
-              display: "flex", 
-              alignItems: "center", 
-              gap: "6px", 
-              fontSize: "14px", 
-              fontWeight: "600", 
-              color: "var(--accent-primary)",
-              cursor: "pointer",
-              borderBottom: "2px solid var(--accent-primary)",
-              paddingBottom: "2px"
-            }}>
-              <Activity size={15} /> Dashboard
-            </span>
           </div>
 
           {/* Right: Facilitator details & Logout */}
